@@ -164,6 +164,7 @@ nginx: |
         proxy_pass $backend_url;
         proxy_pass_header Server;
 
+
         # Add additional response headers
         header_filter_by_lua 'kong.exec_plugins_header_filter()';
 
