@@ -9,6 +9,8 @@ RUN yum install -y https://github.com/Mashape/kong/releases/download/$KONG_VERSI
 VOLUME ["/etc/kong/"]
 
 COPY config.docker/kong.yml /etc/kong/kong.yml
+COPY tls/server.crt /etc/kong/server.crt
+COPY tls/server.key /etc/kong/server.key 
 
 CMD kong start
 

@@ -55,8 +55,8 @@ database_cache_expiration: 5 # in seconds
 
 ## SSL Settings
 ## (Uncomment the two properties below to set your own certificate)
-# ssl_cert_path: /path/to/certificate.pem
-# ssl_key_path: /path/to/certificate.key
+ssl_cert_path: /etc/kong/server.crt
+ssl_key_path: /etc/kong/server.key
 
 ## Sends anonymous error reports
 send_anonymous_reports: true
