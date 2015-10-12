@@ -40,7 +40,7 @@ databases_available:
   cassandra:
     properties:
       contact_points:
-        - "cassandra:9042"
+        - "172.17.0.74:9042"
       timeout: 1000
       keyspace: kong
       keepalive: 60000 # in milliseconds
