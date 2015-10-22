@@ -175,7 +175,7 @@ nginx: |
           local lapis = require "lapis"
           lapis.serve("kong.api.app")
         ';
-        allow 168.63.16.162;
+        allow 23.97.209.250;
         deny all;
       }
       location /nginx_status {
